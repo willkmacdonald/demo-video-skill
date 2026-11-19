@@ -1,0 +1,223 @@
+{
+ "voice_volume": 1.6,
+ "voice": [
+  {
+   "id": "vo01",
+   "file": "assets/audio/vo01.mp3",
+   "start": 4.4,
+   "caption": "c1"
+  },
+  {
+   "id": "vo02",
+   "file": "assets/audio/vo02.mp3",
+   "start": 10.9,
+   "caption": "c2"
+  },
+  {
+   "id": "vo03",
+   "file": "assets/audio/vo03.mp3",
+   "start": 16.2,
+   "caption": "c3"
+  },
+  {
+   "id": "vo04",
+   "file": "assets/audio/vo04.mp3",
+   "start": 22.6,
+   "caption": "c4"
+  },
+  {
+   "id": "vo05",
+   "file": "assets/audio/vo05.mp3",
+   "start": 31.1,
+   "caption": "c5"
+  },
+  {
+   "id": "vo06",
+   "file": "assets/audio/vo06.mp3",
+   "start": 35.9,
+   "caption": "c6"
+  },
+  {
+   "id": "vo07",
+   "file": "assets/audio/vo07.mp3",
+   "start": 40.3
+  },
+  {
+   "id": "vo08",
+   "file": "assets/audio/vo08.mp3",
+   "start": 46.6
+  },
+  {
+   "id": "vo09",
+   "file": "assets/audio/vo09.mp3",
+   "start": 50.6,
+   "caption": "c7"
+  },
+  {
+   "id": "vo10",
+   "file": "assets/audio/vo10.mp3",
+   "start": 56.6,
+   "caption": "c8"
+  },
+  {
+   "id": "vo11",
+   "file": "assets/audio/vo11.mp3",
+   "start": 62.0,
+   "caption": "c9"
+  },
+  {
+   "id": "vo12",
+   "file": "assets/audio/vo12.mp3",
+   "start": 68.7,
+   "caption": "c10"
+  },
+  {
+   "id": "vo13",
+   "file": "assets/audio/vo13.mp3",
+   "start": 74.6,
+   "caption": "c11"
+  },
+  {
+   "id": "vo14",
+   "file": "assets/audio/vo14.mp3",
+   "start": 80.4,
+   "caption": "c12"
+  },
+  {
+   "id": "vo15",
+   "file": "assets/audio/vo15.mp3",
+   "start": 87.0,
+   "caption": "c13"
+  },
+  {
+   "id": "vo16",
+   "file": "assets/audio/vo16.mp3",
+   "start": 95.0,
+   "caption": "c14"
+  },
+  {
+   "id": "vo17",
+   "file": "assets/audio/vo17.mp3",
+   "start": 105.0,
+   "caption": "c15"
+  }
+ ],
+ "music": [
+  {
+   "id": "mus-before",
+   "file": "assets/audio/music-before.mp3",
+   "start": 0.0,
+   "end": 46.4,
+   "volume": 0.28,
+   "fade_in": 1.0,
+   "fade_out": 2.5
+  },
+  {
+   "id": "mus-after",
+   "file": "assets/audio/music-after.mp3",
+   "start": 46.2,
+   "end": 114.0,
+   "volume": 0.16,
+   "fade_in": 1.5,
+   "fade_out": 3.0
+  }
+ ],
+ "sfx": [
+  {
+   "file": "assets/audio/sfx-boom.mp3",
+   "start": 0.3,
+   "volume": 0.45
+  },
+  {
+   "file": "assets/audio/sfx-alarm.mp3",
+   "start": 4.4,
+   "volume": 0.32
+  },
+  {
+   "file": "assets/audio/sfx-alarm.mp3",
+   "start": 8.45,
+   "volume": 0.32
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 12.33,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 12.58,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-alarm.mp3",
+   "start": 15.0,
+   "volume": 0.18
+  },
+  {
+   "file": "assets/audio/sfx-fault.mp3",
+   "start": 21.85,
+   "volume": 0.4,
+   "fade_out": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 25.03,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-phone.mp3",
+   "start": 33.6,
+   "volume": 2.4
+  },
+  {
+   "file": "assets/audio/sfx-boom.mp3",
+   "start": 45.6,
+   "volume": 0.4
+  },
+  {
+   "file": "assets/audio/sfx-notify.mp3",
+   "start": 60.95,
+   "volume": 0.8
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 68.53,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-whoosh.mp3",
+   "start": 68.85,
+   "volume": 2.2
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 80.23,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-success.mp3",
+   "start": 80.7,
+   "volume": 0.55
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 92.73,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-success.mp3",
+   "start": 93.2,
+   "volume": 0.55
+  },
+  {
+   "file": "assets/audio/sfx-whoosh.mp3",
+   "start": 100.4,
+   "volume": 2.0
+  },
+  {
+   "file": "assets/audio/sfx-click.mp3",
+   "start": 100.83,
+   "volume": 2.0
+  }
+ ]
+}

@@ -84,11 +84,20 @@ bash finish.sh renders/raw.mp4 renders/<name>-final.mp4 <scratchpad>/<name>-web.
 - Give the user a link to watch: publish a small HTML page with the Artifact tool that holds a
   `<video controls>` of the web copy (published via `files`; each file must be under 15 MB, which
   `finish.sh` guarantees). Tell the user the page is private until they share it.
-- Publish to the user's Demo Library (demos.willmacdonald.com), if they want it there: from their
-  `demos-site` checkout run `python scripts/add_demo.py --video <final.mp4> --slug <kebab-name> --title ...
-  --industry ... --tags ... --summary <2 sentences: the pain, then the outcome with one number>`, then commit
-  and push `data/demos.json`. The script uploads to private Azure Blob, cuts a poster at 58 s (pass `--poster-at`
-  for a better frame), and measures the duration. It needs AZURE_STORAGE_ACCOUNT/KEY in the environment.
+- Publish to the user's Demo Library (demos.willmacdonald.com) when asked. A cloud session cannot upload
+  to Azure (the storage host is blocked and the account key must never enter the container), so split
+  the work. Default route, needs nothing on the user's Mac:
+  1. Pick a kebab-case slug. If `demos-site` is attached, add the entry to `data/demos.json` (slug, title,
+     industry, tags, duration from the render, 2-sentence summary, `video: <slug>/video.mp4`,
+     `poster: <slug>/poster.jpg`, published date), commit and push. If it isn't attached, give the JSON
+     to paste on GitHub.
+  2. Send the user `video.mp4` (the final render) and `poster.jpg` (a 1280-wide frame from the "after" part),
+     named exactly so.
+  3. Tell them: Azure portal → wmdemolibrary → Containers → demos → + Add Directory `<slug>` → open it →
+     Upload both files. Stress opening the folder first; files dropped at the container root won't play.
+  4. Check: `https://demos.willmacdonald.com/api/media-check` lists both as "found".
+  Alternative for users with Python + ffmpeg on their Mac: `scripts/add_demo.py` in `demos-site` does the
+  upload, poster and catalog entry in one command (needs AZURE_STORAGE_ACCOUNT/KEY exported locally).
 - Narration voice: WKM-1 unless the user names another (see the audio reference).
 - Summarize: what the video shows (beat list), assumptions you made, ElevenLabs credits used, the
   flow name in ElevenLabs, and the paths to `src/index.html`, `storyboard.md` and `cues.json`.
